@@ -16,12 +16,6 @@ double distance = Math.Sqrt(Math.Pow(array_B [0] - array_A [0], 2) + Math.Pow(ar
 Console.WriteLine($"Расстояние между тремя точками в 3D пространстве равно {Math.Round(distance, 2)}");
 */
 
-
-/*Console.WriteLine ("1 вариант:");
-Console.WriteLine ("A (3,6,8); B (2,1,-7)");
-Console.WriteLine ("2 вариант:");
-Console.WriteLine ("A (7,-5, 0); B (1,-1,9)");
-*/
 Console.Write ("Введите число (1 или 2): ");
 int number = int.Parse(Console.ReadLine()!);
 if (number == 1)
