@@ -8,8 +8,15 @@
 Console.Write ("Введите число (A): ");
 int A = int.Parse (Console.ReadLine()!); // ввод переменной A (число)
 
-Console.Write ("Введите число (B, где B>0): ");
+Console.Write ("Введите число (B): ");
 int B = int.Parse (Console.ReadLine()!); // ввод переменной B (степень)
+
+if (B < 0)
+{
+    Console.WriteLine ("Введено неверное число!");
+}
+else
+{
 
 Console.WriteLine ($"Число {A}, возведенное в степень {B}, равно {GetPow(A,B)}"); // вызов метода
 
@@ -23,4 +30,5 @@ int GetPow(int num, int n)
 		result *= num;
 	}
 	return result;
+}
 }
