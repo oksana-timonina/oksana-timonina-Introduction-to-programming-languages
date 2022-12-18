@@ -4,8 +4,7 @@
 
 82 -> 10
 
-9012 -> 12
-*/
+9012 -> 12 */
 
 Console.Write ("Введите число: ");
 int num = int.Parse (Console.ReadLine()!); 
