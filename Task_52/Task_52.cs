@@ -8,11 +8,13 @@
 
 //------ ОСНОВНАЯ ПРОГРАММА -------
 
-Console.WriteLine("Введите количество строк: ");
+Console.Write("Введите количество строк: ");
 int rows = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите количество столбцов: ");
+Console.Write("Введите количество столбцов: ");
 int columns =  int.Parse(Console.ReadLine()!);
 int [,] array = GetArray (rows, columns, 0, 100);
+
+Console.WriteLine();
 
 for (int j = 0; j < array.GetLength(1); j++)
 {
@@ -21,10 +23,12 @@ for (int j = 0; j < array.GetLength(1); j++)
     {
         average = (average + array[i, j]);
     }
-    average = average / columns;
+    average = average / rows;
     average = Math.Round(average, 1);
     Console.Write (average + "; ");
 }
+
+Console.WriteLine();
 Console.WriteLine();
 PrintArray(array);
 
