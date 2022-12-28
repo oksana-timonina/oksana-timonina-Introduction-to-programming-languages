@@ -14,7 +14,7 @@ Console.Write($"Значения элементов в промежутке от
 Console.WriteLine(PrintNumbers(M,N));
 
 Console.WriteLine($"Сумма элементов в промежутке от M ({M}) до N ({N}) равна {PrintSumNumbers(M,N)}!");
-//Console.WriteLine(PrintNumbers(M,N));
+
 
 string PrintNumbers(int start, int end){
     if(start == end) return start.ToString();
